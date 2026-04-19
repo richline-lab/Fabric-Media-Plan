@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خطة متجر الأقمشة الرجالية والتفصيل - ريتش لاين</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            950: '#020617',
+                            900: '#0f172a',
+                            800: '#1e293b',
+                        },
+                        brand: {
+                            emerald: '#10b981',
+                            gold: '#f59e0b',
+                            cyan: '#06b6d4',
+                            blue: '#38bdf8',
+                            purple: '#8b5cf6',
+                            pink: '#ec4899',
+                            yellow: '#facc15'
+                        }
+                    },
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { 
+            font-family: 'Cairo', sans-serif; 
+            background-color: #020617; 
+            color: #f1f5f9; 
+            scroll-behavior: smooth;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(245, 158, 11, 0.05) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(6, 182, 212, 0.05) 0%, transparent 20%);
+        }
+
+        .glass-panel { 
+            background: rgba(30, 41, 59, 0.4); 
+            backdrop-filter: blur(12px); 
+            border: 1px solid rgba(255, 255, 255, 0.05); 
+            border-radius: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        .glass-panel:hover {
+            background: rgba(30, 41, 59, 0.6);
+            border-color: rgba(245, 158, 11, 0.3);
+            transform: translateY(-5px);
+        }
+
+        .accent-line {
+            height: 4px;
+            width: 60px;
+            background: linear-gradient(90deg, #f59e0b, transparent);
+            border-radius: 2px;
+            margin-top: 0.5rem;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+            height: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: rgba(245, 158, 11, 0.5);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Header Section -->
+    <header class="relative flex flex-col justify-center items-center text-center px-6 overflow-hidden pt-20 pb-10">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-brand-gold/10 blur-[120px] rounded-full -z-10 animate-pulse-slow"></div>
+        
+        <div class="relative group mb-8 bg-white/5 py-4 px-8 rounded-3xl backdrop-blur-sm border border-white/10 animate-float">
+            <h1 class="text-xl font-black tracking-wider text-white">ريتش لاين لتطوير الأعمال</h1>
+        </div>
+        
+        <div class="space-y-4 max-w-4xl relative z-10">
+            <h2 class="text-brand-gold font-bold text-3xl md:text-5xl mt-4 leading-tight">خطة إنشاء متجر الأقمشة الرجالية وتفصيل الثوب</h2>
+            <p class="text-slate-400 text-lg max-w-2xl mx-auto mt-4">استراتيجية شاملة لبناء العلامة التجارية وتجهيز تجربة العميل الرقمية لعام 2026</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 max-w-6xl pb-24 space-y-24 mt-8">
+
+        <!-- Phase 1: Brand Strategy -->
+        <section class="reveal space-y-8">
+            <div class="flex items-center gap-4">
+                <span class="text-4xl font-black opacity-20 text-brand-gold">01</span>
+                <div>
+                    <h2 class="text-2xl font-black text-white">استراتيجية العلامة التجارية</h2>
+                    <div class="accent-line"></div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass-panel p-8 border-r-4 border-r-brand-gold">
+                    <h3 class="text-xl font-bold text-white mb-4">مفهوم العلامة (Brand Concept)</h3>
+                    <ul class="space-y-3 text-slate-300">
+                        <li class="flex items-center gap-2"><span class="text-brand-gold">←</span> أقمشة رجالية عالية الجودة</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-gold">←</span> خدمة تفصيل ثوب باحترافية</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-gold">←</span> تجربة طلب إلكترونية سهلة</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-gold">←</span> تغليف فاخر يعكس قيمة المنتج</li>
+                    </ul>
+                </div>
+                <div class="glass-panel p-8 border-r-4 border-r-brand-cyan">
+                    <h3 class="text-xl font-bold text-white mb-4">التموضع (Positioning)</h3>
+                    <p class="text-slate-300 leading-relaxed">التموضع كخيار متميز يجمع بين الموثوقية التقليدية في التفصيل وبين الحداثة الرقمية في الطلب.</p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="bg-brand-cyan/10 text-brand-cyan text-xs px-3 py-1 rounded-full border border-brand-cyan/20">احترافية</span>
+                        <span class="bg-brand-cyan/10 text-brand-cyan text-xs px-3 py-1 rounded-full border border-brand-cyan/20">ثقة</span>
+                        <span class="bg-brand-cyan/10 text-brand-cyan text-xs px-3 py-1 rounded-full border border-brand-cyan/20">فخامة هادئة</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phase 2: Audience & Visuals -->
+        <section class="reveal space-y-8">
+            <div class="flex items-center gap-4">
+                <span class="text-4xl font-black opacity-20 text-brand-emerald">02</span>
+                <div>
+                    <h2 class="text-2xl font-black text-white">الفئة المستهدفة والهوية البصرية</h2>
+                    <div class="accent-line !bg-gradient-to-r !from-brand-emerald !to-transparent"></div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="glass-panel p-6 text-center">
+                    <div class="text-3xl mb-4">👥</div>
+                    <h4 class="font-bold text-white mb-2">الفئة المستهدفة</h4>
+                    <p class="text-xs text-slate-400">رجال (20-55 سنة)، موظفون ومقبلون على الزواج، يهتمون بالتفاصيل والجودة.</p>
+                </div>
+                <div class="glass-panel p-6 text-center">
+                    <div class="text-3xl mb-4">🎨</div>
+                    <h4 class="font-bold text-white mb-2">الهوية البصرية</h4>
+                    <p class="text-xs text-slate-400">ألوان تعكس الفخامة (كحلي، ذهبي، رمادي)، شعار بسيط وخطوط عصرية.</p>
+                </div>
+                <div class="glass-panel p-6 text-center">
+                    <div class="text-3xl mb-4">📦</div>
+                    <h4 class="font-bold text-white mb-2">تجربة التغليف</h4>
+                    <p class="text-xs text-slate-400">صندوق فاخر، ورق تغليف بهوية البراند، وبطاقات شكر وعناية مخصصة.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phase 3: Ecommerce & Tech -->
+        <section class="reveal space-y-8">
+            <div class="flex items-center gap-4">
+                <span class="text-4xl font-black opacity-20 text-brand-blue">03</span>
+                <div>
+                    <h2 class="text-2xl font-black text-white">بناء المتجر الإلكتروني (Ecommerce)</h2>
+                    <div class="accent-line !bg-gradient-to-r !from-brand-blue !to-transparent"></div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass-panel p-8 relative overflow-hidden group border-r-4 border-r-brand-blue">
+                    <h3 class="text-xl font-bold text-white mb-6">هيكل المتجر الأساسي</h3>
+                    <div class="space-y-4">
+                        <div class="bg-navy-900/40 p-4 rounded-lg border border-white/5">
+                            <span class="text-brand-blue font-bold block mb-1">الصفحات:</span>
+                            <p class="text-slate-300 text-sm">الرئيسية، معرض الأقمشة، نظام تفصيل الثوب، حاسبة المقاسات.</p>
+                        </div>
+                        <div class="bg-navy-900/40 p-4 rounded-lg border border-white/5">
+                            <span class="text-brand-blue font-bold block mb-1">السيو (SEO):</span>
+                            <p class="text-slate-300 text-sm">استهداف كلمات: "تفصيل ثوب أونلاين"، "أقمشة رجالية فاخرة".</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-panel p-8 relative overflow-hidden group border-r-4 border-r-brand-purple">
+                    <h3 class="text-xl font-bold text-white mb-6">تجربة المستخدم (UX)</h3>
+                    <div class="grid grid-cols-2 gap-4 text-center">
+                        <div class="p-4 bg-white/5 rounded-xl">
+                            <span class="block text-2xl mb-1">📱</span>
+                            <span class="text-xs text-slate-400">توافق تام مع الجوال</span>
+                        </div>
+                        <div class="p-4 bg-white/5 rounded-xl">
+                            <span class="block text-2xl mb-1">💳</span>
+                            <span class="text-xs text-slate-400">تعدد خيارات الدفع</span>
+                        </div>
+                        <div class="p-4 bg-white/5 rounded-xl">
+                            <span class="block text-2xl mb-1">🚚</span>
+                            <span class="text-xs text-slate-400">تتبع مباشر للشحنات</span>
+                        </div>
+                        <div class="p-4 bg-white/5 rounded-xl">
+                            <span class="block text-2xl mb-1">⚡</span>
+                            <span class="text-xs text-slate-400">سرعة تحميل فائقة</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phase 4: Marketing Campaigns -->
+        <section class="reveal space-y-8">
+            <div class="flex items-center gap-4">
+                <span class="text-4xl font-black opacity-20 text-brand-pink">04</span>
+                <div>
+                    <h2 class="text-2xl font-black text-white">استراتيجية الحملات الإعلانية</h2>
+                    <div class="accent-line !bg-gradient-to-r !from-brand-pink !to-transparent"></div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Awareness -->
+                <div class="glass-panel p-6 border-b-4 border-b-brand-pink">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="bg-brand-pink/20 text-brand-pink text-[10px] font-bold px-2 py-1 rounded">Stage 1</span>
+                        <span class="font-bold text-white">الوعي</span>
+                    </div>
+                    <h4 class="font-bold text-white mb-2">حملات Awareness</h4>
+                    <p class="text-xs text-slate-400 mb-4">بناء القاعدة الجماهيرية عبر TikTok و Instagram Reels.</p>
+                    <div class="space-y-2 text-xs">
+                        <div class="flex justify-between"><span class="text-slate-500">الهدف:</span> <span class="text-slate-200">الوصول والزيارات</span></div>
+                        <div class="flex justify-between"><span class="text-slate-500">المنصات:</span> <span class="text-slate-200">Snapchat + Meta</span></div>
+                    </div>
+                </div>
+
+                <!-- Consideration -->
+                <div class="glass-panel p-6 border-b-4 border-b-brand-gold">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="bg-brand-gold/20 text-brand-gold text-[10px] font-bold px-2 py-1 rounded">Stage 2</span>
+                        <span class="font-bold text-white">الاهتمام</span>
+                    </div>
+                    <h4 class="font-bold text-white mb-2">حملات التفاعل</h4>
+                    <p class="text-xs text-slate-400 mb-4">إبراز جودة الأقمشة وتجارب العملاء السابقين.</p>
+                    <div class="space-y-2 text-xs">
+                        <div class="flex justify-between"><span class="text-slate-500">الهدف:</span> <span class="text-slate-200">بناء الثقة</span></div>
+                        <div class="flex justify-between"><span class="text-slate-500">المحتوى:</span> <span class="text-slate-200">User Generated Content</span></div>
+                    </div>
+                </div>
+
+                <!-- Conversion -->
+                <div class="glass-panel p-6 border-b-4 border-b-brand-emerald">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="bg-brand-emerald/20 text-brand-emerald text-[10px] font-bold px-2 py-1 rounded">Stage 3</span>
+                        <span class="font-bold text-white">التحويل</span>
+                    </div>
+                    <h4 class="font-bold text-white mb-2">حملات المبيعات</h4>
+                    <p class="text-xs text-slate-400 mb-4">حملات إعادة استهداف (Retargeting) لإتمام الطلبات.</p>
+                    <div class="space-y-2 text-xs">
+                        <div class="flex justify-between"><span class="text-slate-500">الهدف:</span> <span class="text-brand-emerald">ROAS مرتفع</span></div>
+                        <div class="flex justify-between"><span class="text-slate-500">الجمهور:</span> <span class="text-slate-200">زوار المتجر</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phase 5: Metrics -->
+        <section class="reveal space-y-8">
+            <div class="flex items-center gap-4">
+                <span class="text-4xl font-black opacity-20 text-brand-cyan">05</span>
+                <div>
+                    <h2 class="text-2xl font-black text-white">قياس الأداء (KPIs)</h2>
+                    <div class="accent-line !bg-gradient-to-r !from-brand-cyan !to-transparent"></div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="glass-panel p-6 text-center border-t-2 border-t-brand-cyan">
+                    <div class="text-2xl font-black text-brand-cyan">ROAS</div>
+                    <p class="text-[10px] text-slate-400 mt-1">عائد الإنفاق الإعلاني</p>
+                </div>
+                <div class="glass-panel p-6 text-center border-t-2 border-t-brand-gold">
+                    <div class="text-2xl font-black text-brand-gold">CAC</div>
+                    <p class="text-[10px] text-slate-400 mt-1">تكلفة الاستحواذ</p>
+                </div>
+                <div class="glass-panel p-6 text-center border-t-2 border-t-brand-pink">
+                    <div class="text-2xl font-black text-brand-pink">CR</div>
+                    <p class="text-[10px] text-slate-400 mt-1">معدل التحويل</p>
+                </div>
+                <div class="glass-panel p-6 text-center border-t-2 border-t-brand-emerald">
+                    <div class="text-2xl font-black text-brand-emerald">AOV</div>
+                    <p class="text-[10px] text-slate-400 mt-1">متوسط قيمة الطلب</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-navy-900 border-t border-white/5 py-16 px-6 text-center">
+        <div class="container mx-auto space-y-8">
+            <img src="https://i.ibb.co/9Q4yt1p/file.jpg" alt="Richline Logo" class="h-16 w-auto mx-auto rounded-xl opacity-60">
+            <p class="text-slate-500 text-xs max-w-md mx-auto leading-relaxed">
+                هذه الخطة ملكية فكرية لوكالة ريتش لاين، تم إعدادها خصيصاً لمشروع الأقمشة الرجالية لضمان إطلاق ناجح ومستدام.
+            </p>
+            <div class="pt-8 border-t border-white/5">
+                <p class="text-[10px] text-slate-700 font-bold tracking-widest uppercase">
+                    STRATEGIC PLAN BY <span class="text-brand-gold">RICHLINE AGENCY</span> &copy; 2026
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>
